@@ -1,7 +1,7 @@
 {
-  "name": "LedBlink",
-  "description": "easy led blink support;",
-  "description_zh": "简单易用led闪烁控制软件包",  
+  "name": "UPACKER",
+  "description": "building and parsing data frames to be sent over a serial interface",
+  "description_zh": "串行通信链路协议",  
   "keywords": [
     "LedBlink"
   ],
@@ -11,20 +11,14 @@
     "email": "aeo1234@qq.com"
   },
   "license": "GPL-2.0",
-  "repository": "https://gitee.com/aeo123/ledblink.git",
+  "repository": "https://github.com/aeo123/upacker.git",
   "icon": "unknown",
-  "homepage": "https://gitee.com/aeo123/ledblink/tree/master",
-  "doc": "https://gitee.com/aeo123/ledblink/blob/master/readme.md",
+  "homepage": "https://github.com/aeo123/upacker.git",
+  "doc": "https://github.com/aeo123/upacker.git",
   "site": [
     {
-      "version": "v1.0.0",
-      "URL": "https://gitee.com/aeo123/ledblink.git",
-      "filename": "LedBlink-1.0.0.zip",
-      "VER_SHA": "ea6d3e235b95e9a59d8dd6c28e80b6da798cf895"
-    },
-    {
       "version": "latest",
-      "URL": "https://gitee.com/aeo123/ledblink.git",
+      "URL": "https://github.com/aeo123/upacker.git",
       "filename": "Null for git package",
       "VER_SHA": "master"
     }

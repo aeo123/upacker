@@ -1,8 +1,7 @@
 
-# Kconfig file for package LedBlink
-menuconfig PKG_USING_UPARAM
-    bool "Manage parameters saved to FLASH"
-    select PKG_USING_FAL
+# Kconfig file for package UPACKER
+menuconfig PKG_USING_UPACKER
+    bool "building and parsing data frames to be sent over a serial interface"
     default n
 
 
@@ -10,21 +9,21 @@ if PKG_USING_UPARAM
 
     config PKG_UPARAM_PATH
         string
-        default "/packages/system/uparam"
+        default "/packages/misc/upacker"
 
     choice
         prompt "Version"
-        default PKG_USING_UPARAM_LATEST_VERSION
+        default PKG_USING_UPACKER_LATEST_VERSION
         help
             Select the package version
 
-        config PKG_USING_UPARAM_LATEST_VERSION
+        config PKG_USING_UPACKER_LATEST_VERSION
             bool "latest"
     endchoice
           
     config PKG_UPARAM_VER
        string
-       default "latest"    if PKG_USING_LEDBLINK_LATEST_VERSION
+       default "latest"    if PKG_USING_UPACKER_LATEST_VERSION
 
 endif
 
