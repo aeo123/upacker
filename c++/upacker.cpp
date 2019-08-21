@@ -100,7 +100,7 @@ uint8_t Upacker::frame_decode(uint8_t d)
     else if (this->state == 3)
     {
         //header校验
-        uint8_t hc = ((d & 0x03) << 4) | (this->flen & 0xC000) >> 12;
+        uint8_t hc = ((d & 0x03) << 4) | ((this->flen & 0xC000) >> 12);
 
         this->check = d;
         if(hc != (this->calc & 0X3C)){

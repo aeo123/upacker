@@ -6,7 +6,7 @@ CPPPATH = [cwd, cwd + '/c', str(Dir('#'))]
 src     = Glob('c/*.c')
 
 
-group = DefineGroup('upacker', src, depend = [''], CPPPATH = CPPPATH)
+group = DefineGroup('upacker', src, CPPPATH = CPPPATH)
 
 Return('group')
 
